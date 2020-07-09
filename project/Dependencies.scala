@@ -165,7 +165,7 @@ object Dependencies {
   )
 
   private[this] val protoSchemasLib =
-     "com.wavesplatform" % "protobuf-schemas" % "1.2.6-SNAPSHOT" classifier "proto"
+     "com.wavesplatform" % "protobuf-schemas" % "1.2.6" classifier "proto"
 
   lazy val scalapbRuntime = Def.setting {
     val version = scalapb.compiler.Version.scalapbVersion
@@ -187,7 +187,7 @@ object Dependencies {
   )
 
   lazy val circe = Def.setting {
-    val circeVersion = "0.12.3"
+    val circeVersion = "0.13.0"
     Seq(
       "io.circe" %%% "circe-core",
       "io.circe" %%% "circe-generic",
