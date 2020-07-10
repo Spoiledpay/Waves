@@ -425,7 +425,7 @@ class IssueReissueBurnAssetSuite extends BaseSuite {
         payment = payments
       )
 
-    if (wait) nodes.waitForTransaction(tx._1.id)
+    if (wait) nodes.waitForHeightAriseAndTxPresent(tx._1.id)
     tx._1
   }
 
